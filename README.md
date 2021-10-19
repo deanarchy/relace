@@ -32,8 +32,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
- 
-  <h3 align="center">relace</h3>
+
+  <a href="https://github.com/deanarchy/relace">
+    <img src="https://i.ibb.co/v4CBYNm/Relace.png"" alt="Logo" width="80" height="80">
+  </a>
+  <h3 align="center">Relace</h3>
 
   <p align="center">
     🔥 🔥 Virtual marketplace for service, goods, favor and many more! 🔥 🔥
@@ -75,10 +78,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Hello world 👋 relace is a virtual marketplace where user can exchange... almost ANYTHING! 🎉. From service, goods, favor, trivial thing, significant thing all you can think of!. This project is aimed to solving a real world problem where user don't know where to sell/buy the **things** that they need (or want or whims 😆). In relace, there are only two: ***Customer*** and ***Provider***. Provider are the one who.. err you know, provides **things** and customer, it goes without saying are the one who buys **things**. Any user registered to relace can assume both roles.
+Hello world 👋 Relace is a virtual marketplace where user can exchange... almost ANYTHING! 🎉. From service, goods, favor, trivial thing, significant thing all you can think of!. This project is aimed to solving a real world problem where user don't know where to sell/buy the **things** that they need (or want or whims 😆). In Relace, there are only two: ***Customer*** and ***Provider***. Provider are the one who.. err you know, provides **things** and customer, it goes without saying are the one who buys **things**. Any user registered to Relace can assume both roles.
 
 ### Nerd Zone 🤓
-The relace system architecture is built on the microservice architecture with its common patterns. Although its unit is still comprised of coarse-grained services, it has improved the  scalability, agility, and reliability of the system while overcoming the shortcomings of the monolithic architecture. As the system grows, it may make sense to further break down the services. 
+The Relace system architecture is built on the microservice architecture with its common patterns. Although its unit is still comprised of coarse-grained services, it has improved the  scalability, agility, and reliability of the system while overcoming the shortcomings of the monolithic architecture. As the system grows, it may make sense to further break down the services. 
 
 The event-driven microservices paradigm is used in the communication pattern to enable asynchronicity and loose coupling between services. To accomplish this basic pub/sub messaging is needed. AMQP (RabbitMQ) w/ topic exchange type is chosen in this project.
 
