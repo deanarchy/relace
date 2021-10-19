@@ -1,1 +1,7 @@
-site_name: relace Documentation
+site_name: relace docs
+theme:
+  name: readthedocs
+nav:
+  - Introduction: index.md
+  - Architecture: architecture.md
+  - API: https://documenter.getpostman.com/view/14730784/UV5XgGmg

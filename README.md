@@ -7,7 +7,7 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email, project_title, project_description
+*** deanarchy, relace, twitter_handle, email, project_title, project_description
 -->
 
 
@@ -32,23 +32,20 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">project_title</h3>
+ 
+  <h3 align="center">relace</h3>
 
   <p align="center">
-    project_description
+    🔥 🔥 Virtual marketplace for service, goods, favor and many more! 🔥 🔥
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://relace.readthedocs.io/en/latest/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/deanarchy/relace">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/deanarchy/relace/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/deanarchy/relace/issues">Request Feature</a>
   </p>
 </p>
 
@@ -62,17 +59,10 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#nerd-zone">Nerd Zone</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#live-demo">Live Demo</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -85,61 +75,29 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+Hello world 👋 relace is a virtual marketplace where user can exchange... almost ANYTHING! 🎉. From service, goods, favor, trivial thing, significant thing all you can think of!. This project is aimed to solving a real world problem where user don't know where to sell/buy the **things** that they need (or want or whims 😆). In relace, there are only two: ***Customer*** and ***Provider***. Provider are the one who.. err you know, provides **things** and customer, it goes without saying are the one who buys **things**. Any user registered to relace can assume both roles.
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### Nerd Zone 🤓
+The relace system architecture is built on the microservice architecture with its common patterns. Although its unit is still comprised of coarse-grained services, it has improved the  scalability, agility, and reliability of the system while overcoming the shortcomings of the monolithic architecture. As the system grows, it may make sense to further break down the services. 
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+The event-driven microservices paradigm is used in the communication pattern to enable asynchronicity and loose coupling between services. To accomplish this basic pub/sub messaging is needed. AMQP (RabbitMQ) w/ topic exchange type is chosen in this project.
 
+Every service in the system is written on **Typescript - Express.js** with each using **MongoDB** database. All service (excluding display service) serves as a representation of a domain that typically exists in an e-commerce/marketplace business. Only display service exists as a *CQRS* and *BFF*. Due to the infrastructure limitation, new functionalities are to be expected in the future.
+
+When it comes to infrastructure, Docker is used to containerize each service. Each service is designed to run in a Kubernetes cluster to make scaling, replicating, and orchestration easier. Ingress NGINX is utilized as an API gateway for the outside world to communicate with the Kubernetes cluster internals. 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Typescript](https://www.typescriptlang.org/)
+* [Express.js](https://expressjs.com/)
+* [Mongoose (w/ Typegoose)](https://mongoosejs.com/)
 
+<!-- LIVE DEMO -->
+## Live Demo
 
+[~~relace.dev~~](https://relace.dev)
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+*Due to a VERY demanding requirement of resources this project has (it's a budget issue actually 😆), deployed app aren't available for the time being.*
 
 
 
@@ -155,7 +113,6 @@ Contributions are what make the open source community such an amazing place to l
 5. Open a Pull Request
 
 
-
 <!-- LICENSE -->
 ## License
 
@@ -166,18 +123,17 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Dean Ramadhan - rmdhndean@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/deanarchy/relace](https://github.com/deanarchy/relace)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [microservices.io](https://microservices.io/) as a patterns reference.
+* [Stephen Grider's course](https://www.udemy.com/course/microservices-with-node-js-and-react/) as my entry to microservices.
 
 <!-- Background -->
 ## Background
@@ -187,15 +143,15 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/deanarchy/relace.svg?style=for-the-badge
+[contributors-url]: https://github.com/deanarchy/relace/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/deanarchy/relace?style=for-the-badge
+[forks-url]: https://github.com/deanarchy/relace/network/members
+[stars-shield]: https://img.shields.io/github/stars/deanarchy/relace.svg?style=for-the-badge
+[stars-url]: https://github.com/denarchy/relace/stargazers
+[issues-shield]: https://img.shields.io/github/issues/deanarchy/relace.svg?style=for-the-badge
+[issues-url]: https://github.com/deanarchy/relace/issues
+[license-shield]: https://img.shields.io/github/license/deanarchy/relace.svg?style=for-the-badge
+[license-url]: https://github.com/deanarchy/relace/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://linkedin.com/in/rmdhndean

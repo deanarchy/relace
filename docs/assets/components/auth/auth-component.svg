@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="993px" preserveAspectRatio="none" style="width:971px;height:993px;background:#FFFFFF;" version="1.1" viewBox="0 0 971 993" width="971px" zoomAndPan="magnify"><defs/><g><!--MD5=[0c4a738b3201a23a254af68352446157]
+cluster auth--><rect fill="#FFFFFF" height="451" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="752" x="7" y="255"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="98" x="334" y="281.864">Auth Service</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="60" x="353" y="297.3481">[Container]</text><!--MD5=[7d31e0ad99682b9efa7ed3dbba05f561]
+entity signin--><rect fill="#85BBF0" height="122" style="stroke:#78A8D8;stroke-width:1.5;" width="219" x="23.5" y="317"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="75" x="95.5" y="340.2001">«component»</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="133" x="66.5" y="358.0641">Sign In Controller</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="50" x="108" y="375.6002">[Express]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="135" y="391.6062"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="37.5" y="408.4061">Allows users to sign in into the</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="110.5" y="425.2061">system</text><!--MD5=[2d7e746ef1b44ec36bf76a555e860c25]
+entity signout--><rect fill="#85BBF0" height="122" style="stroke:#78A8D8;stroke-width:1.5;" width="210" x="278" y="317"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="75" x="345.5" y="340.2001">«component»</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="146" x="310" y="358.0641">Sign Out Controller</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="50" x="358" y="375.6002">[Express]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="385" y="391.6062"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="292" y="408.4061">Allows users to sign out from</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="348.5" y="425.2061">the system</text><!--MD5=[388f72378e697285ab83d1e46414999a]
+entity signup--><rect fill="#85BBF0" height="122" style="stroke:#78A8D8;stroke-width:1.5;" width="220" x="523" y="317"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="75" x="595.5" y="340.2001">«component»</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="141" x="562.5" y="358.0641">Sign Up Controller</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="50" x="608" y="375.6002">[Express]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="635" y="391.6062"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="537" y="408.4061">Allows users to sign up into the</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="610.5" y="425.2061">system</text><!--MD5=[5c3e4109c93eb46da75f92615d57d044]
+entity password--><rect fill="#85BBF0" height="138.8" style="stroke:#78A8D8;stroke-width:1.5;" width="210" x="154" y="551"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="75" x="221.5" y="574.2001">«component»</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="170" x="174" y="592.0641">Password Component</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="81" x="218.5" y="609.6002">[NodeJS class]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="261" y="625.6062"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="168" y="642.4061">Provides functionality related</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="172.5" y="659.2061">to hashing, and comparing</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="225" y="676.006">passwords</text><!--MD5=[08c258c64e29fec0440579a6a7409e1e]
+entity ucp--><rect fill="#85BBF0" height="105.2001" style="stroke:#78A8D8;stroke-width:1.5;" width="215" x="525.5" y="568"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="75" x="595.5" y="591.2001">«component»</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="177" x="544.5" y="609.0641">User Created Publisher</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="96" x="585" y="626.6002">[RabbitMQ Client]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="635" y="642.6062"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="543.5" y="659.4061">To publish UserCreatedEvent</text><!--MD5=[4a65e84059005d12693a083370a06717]
+entity client--><rect fill="#438DD5" height="170" style="stroke:#3C7FC0;stroke-width:1.5;" width="202" x="282" y="7"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="65" x="350.5" y="30.2001">«container»</text><image height="48" width="48" x="359" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAADHUlEQVR4Xu2YT4oVMRDG5245gBd4B5gLzAE8gK5ciTsXs3D5dq7EneDGhcgThAEZGBhQVFAEof3oH68oq5J0Rtt/0OHj0Z1UJV/qX9LvpNx5+U/hJHf9XWyElrARWsJ/Tuju48vzZ9f6PX34Jo96SMCE82gHo4R2D15//PJtcu1w9blKS50a8pKX77/euvcqS1YxSog17j+9ErOzRxf7F+9YTDbwYtavB4lJWCp6fX7xKc9ZxRAhzZsn1aZhSb+96lfyXvLJ4YP6B400ROj2/q1mrEaDLIRTBAyTZVCXwfJQxhAhUenMCKcpuc8gxdZ+MlYgZCGshzxa5jBfmRA2128eIj7kKcK5Grwd9YwhQmxR+RL6QwbpoSNWrREZQ4QEzShj8Ezm40f6sRDWgpOWt7RaP8sEqmKoeItNWlLRr5DnrGKBkCyBI6xpARmDJFdayVqCdi/wbIVAYtK1+q4H9YQSldEkJCo+fYhZEps6qSWzFoAuQUMASd1mE8tOPNUJWWnxe9IWIYHNbFLZRuwFixKSgCogFfOXprKzJcc+qBBCJ58AZqTJBbh4eKdYrSKQEQ7lW9NirWohjYT85gLwFA2uMkm4AugVO2VhDzv48lAkxJ5aRRln2Y45E0Iz3U6pNN3suJsRYls3IlQ1tulmr0VCHZcxRPORbp3T7DL6+y4rx73ldIuEirtRBOmfCGrLeT+PBXXoBxVC5Vg8WNhoWcElkrxbSXv/Oh2jJ6S9HS/ZWaBOqMwOshqtSS2NmZfOrAUojHiKvUndl9lWjJYOIUAp84ESjg7x3s0nBtCredyToGmHHSpggZABf/mzabAd1j1cgerY5AK5HD+7WFIGk1UEOxb4cAvXjzxtFUOEWkUMTuGClq+q61/QOnfQcIX1VhxRzxgi9IuXfAycLVfFCoTsrtIqLesT6syIp/ofiv39BAwRIsvCuW0nAP2SIagP6SJFf/VEyxgiVNwnzm7+5GidAOa+/Y9/NrTCK2OUkAyAU6y1rsan6e8YVcVB85RxQuBs/hxTAi8uQOU8/31/WP0xbISWsBFawkZoCd8BxQnrYvxstngAAAAASUVORK5CYII=" y="33.2001"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="182" x="292" y="96.0641">Single Page Application</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="38" x="364" y="113.6002">[React]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="385" y="129.6062"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="297.5" y="146.4061">The client web applications</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="329" y="163.2061">user interact with</text><!--MD5=[263a8629702241d41d1d44763e07634b]
+entity authdb--><path d="M775.5,541 C775.5,531 870,531 870,531 C870,531 964.5,531 964.5,541 L964.5,700 C964.5,710 870,710 870,710 C870,710 775.5,710 775.5,700 L775.5,541 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M775.5,541 C775.5,551 870,551 870,551 C870,551 964.5,551 964.5,541 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="65" x="837.5" y="568.2001">«container»</text><image height="48" width="48" x="846" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB9UlEQVR4XtWZMUpDQRCGc7c5gBfwAF7AA3gArazEzsLCMp2V2Ak2FiIRhIAEAoKigiIIOmRQHjPZffP/u4X+/NX63syX3dnZjZnI7vWf8iQOEd7Yv4mDnPsA7Z0utk/mcZxwB6DNw9uX98/Z8i3+iXArkNIsnj6+VtJ5ig+gbgKyuTEaU/vC8UBayI7GtHV0Fx/Omwe6nL96lpWUUmcuPp80CaTl4kEG0qqKryTNAJUWa6jji4f4YsYM0Nns2edfJ66YYCCtD5+5IK4zwUClWl6rnel9jFA3BpSfHhNR3RiQlqrPOSa0kjCg0c0VpTsgxqkYANLP6rPlFENVDAAdnC99qpygAw4AgvbXUNOrxxitZADo95qBCtprAJDPgyhGKzkLpOeXT4Iof/5ngdCW6JTvRv8WiG5Cpv5AjTPUv4YaizoGLDkLJNRBZtIXY7SSASC6U+uLMVrJAFD9Yl+RHoIxWskAEF1G+S0mEJBQqwYVkKBAepHwCccErZegQIJPEvqvIxgIatnQTcgMA6k1jc+8Tlo96PQIByS5yxrxpUxooNGjjVgsMwkk1R0HtWZnHkgKTC000ggkgQn9WhjdCiSrRmAXAbpuhu4AJD+NIH8Lq7gPkF0E4jjhPkBWSXGccB8gO0/iOOE+QNYn4zjhPkDS7wehb7o3x+8Q4tUaAAAAAElFTkSuQmCC" y="571.2001"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="113" x="813.5" y="634.0641">Auth Database</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="61" x="839.5" y="651.6002">[MongoDB]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="872" y="667.6062"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="789.5" y="684.4061">Database for storing user</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="835.5" y="701.2061">credentials</text><!--MD5=[5efd806f285230177069469d847ad47a]
+entity account--><rect fill="#B3B3B3" height="170" style="stroke:#A6A6A6;stroke-width:1.5;" width="195" x="535.5" y="817"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="116" x="575" y="840.2001">«external_container»</text><image height="48" width="48" x="609" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACd0lEQVR4Xu2YLZMCMQyG+f9/pwazBoPBnMFgMBgMBoPinmnmMiH92G6hd8wNr2B2u236bJpkW1bhzbTyDX+tD9Cc/iPQer3+iuLCP1uuZ4EOh8Pd6Hg8+h4L1Q+02+1ut5ulEdHII9+7WT1Am83mcrkoAdebqLTRj2zQMiCihEXRWXEGoWM7OLedTqelgbUAiLl1pns1XFxgcet7lNUEtN1ur9erTnA+n6dp8p0ehWNwjw5heGNgzQAxMdNbu8D5TmV1vEkRaDZc2sVAG1iYrQRWHogB1gRBUDHRIobbwMJ4yWAeSH3T4uR22QAo5UQeSCoKv/7BK1Q3XgPibfyDKJzP+9ms4dVptIWRReF2v9+nSyNOeiWQ8zlkypEKMleyxwLhG52b/viJnMIxXGjCw2SHjwVibrnNFgWtjXZ9xwJpPmY/peo/m1NjgdRDLBBOSmsEoNRrG9pjgVwJFQHHYhFG2e/XWKAQ18UmfCpXA4cDicDCH3gF36R8NGrPsUBwECVp9ZNHGmFI+4wFkmvrACdNQ433sUAS0ZWvty7fL3lINxUwsUAs3xTFBSElcztTY4HCzwQVwWrr03CgEPeEaWbdI0q6uesHKo2RyVzai6Qui9KqLZKPbsl4HkgjI7urrwDVZff8pbNRHiiY7LjHtdPXxWjdYlbT4+ml5J5QAQrJaQEr1mjquayWnl5qQCExpyrFu9OiA5BoBkgkhxg8pDtl3yNRxxFR1ASUlRRA3xrb3SG6cXFFPUA2Ql1o29MgavGlUw9QeJxY4rQjXLLqBApJJqsuvX9VifqBRPYfqttzf+aJngUSybfCt3bpNUAv1AdoTm8H9A1AVFvTcO0voAAAAABJRU5ErkJggg==" y="843.2001"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="126" x="570" y="906.0641">Account Service</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="50" x="608" y="923.6002">[NodeJS]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="635" y="939.6062"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="549.5" y="956.4061">Service for managing user</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="597.5" y="973.2061">information</text><!--MD5=[0d06558608631a6a04fdcbe638f3ddb0]
+link client to signin--><path d="M302.19,177.12 C292.93,187.11 283.7,197.22 275,207 C245.16,240.53 213.02,278.83 186.87,310.57 " fill="none" id="client-to-signin" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="181.72,316.83,189.1228,312.5641,184.4925,308.7483,181.72,316.83" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="98" x="276" y="219.1481">Make API calls to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="80" x="285" y="235.6002">[JSON/HTTPS]</text><!--MD5=[4c20fa261a08c50e44e91f881eaf46c3]
+link client to signout--><path d="M383,177.06 C383,218.9 383,268.84 383,308.34 " fill="none" id="client-to-signout" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="383,316.61,386,308.61,380,308.61,383,316.61" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="98" x="384" y="219.1481">Make API calls to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="80" x="393" y="235.6002">[JSON/HTTPS]</text><!--MD5=[b997904d43141edbab4c7fa4080fc801]
+link client to signup--><path d="M463.81,177.12 C473.07,187.11 482.3,197.22 491,207 C520.84,240.53 552.98,278.83 579.13,310.57 " fill="none" id="client-to-signup" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="584.28,316.83,581.5075,308.7483,576.8772,312.5641,584.28,316.83" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="98" x="519" y="219.1481">Make API calls to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="80" x="528" y="235.6002">[JSON/HTTPS]</text><!--MD5=[662a4ead213c1896d292a93bc995db9e]
+link signin to password--><path d="M164.47,439.07 C181.07,470.76 201.62,509.97 219.3,543.73 " fill="none" id="signin-to-password" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="223.03,550.85,221.9729,542.3716,216.6587,545.1573,223.03,550.85" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="30" x="197" y="489.1481">Uses</text><!--MD5=[d6678ca8565b07207dd17e2113a7ccd3]
+link signup to password--><path d="M539.59,439.07 C488.44,471.96 424.71,512.94 370.92,547.53 " fill="none" id="signup-to-password" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="364.08,551.93,372.4311,550.1248,369.185,545.0788,364.08,551.93" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="30" x="491" y="489.1481">Uses</text><!--MD5=[481f43cc1c9dcc6094fcdca0864def67]
+link signin to authdb--><path d="M242.56,433.73 C248.39,435.7 254.22,437.48 260,439 C438,485.77 500.03,406.14 673,469 C684.78,473.28 726.65,504.84 768.78,537.97 " fill="none" id="signin-to-authdb" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="775.26,543.08,770.8339,535.7718,767.1199,540.4841,775.26,543.08" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="89" x="718" y="481.1481">Reads/writes to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="730.5" y="497.6002">[Mongoose]</text><!--MD5=[6c6a45432a472e9e20d7bea59c78ead5]
+link signup to authdb--><path d="M743,413.69 C771.57,427.14 800.13,445.19 821,469 C834.51,484.42 844.31,503.63 851.41,523.11 " fill="none" id="signup-to-authdb" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="854.09,530.88,854.2953,522.3385,848.6283,524.3096,854.09,530.88" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="89" x="841" y="481.1481">Reads/writes to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="853.5" y="497.6002">[Mongoose]</text><!--MD5=[9542b9270f8ca45b7ee87a0745df47b8]
+link signup to ucp--><path d="M633,439.07 C633,475.93 633,522.96 633,559.77 " fill="none" id="signup-to-ucp" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="633,567.93,636,559.93,630,559.93,633,567.93" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="30" x="634" y="489.1481">Uses</text><!--MD5=[d1510caa99211ccf0b7aebffbadb1ad7]
+link ucp to account--><path d="M633,673.09 C633,711.03 633,763.63 633,808.74 " fill="none" id="ucp-to-account" style="stroke:#0000FF;stroke-width:1.0;stroke-dasharray:1.0,3.0;"/><polygon fill="#0000FF" points="633,816.78,636,808.78,630,808.78,633,816.78" style="stroke:#0000FF;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="141" x="634" y="752.1481">Send UserCreated event</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="11" x="700.5" y="766.5482">to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="116" x="648" y="783.0003">[Async/via RabbitMQ]</text><!--MD5=[58ef80dc95ff10d4703ad8a66844839b]
+@startuml auth-component
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.3.0
+!define ICONURL2 https://raw.githubusercontent.com/plantuml-stdlib/gilbarbara-plantuml-sprites/v1.0/sprites
+
+!includeurl ICONURL/devicons/nodejs_small.puml
+!includeurl ICONURL/devicons/react.puml
+!includeurl ICONURL/devicons/mongodb.puml
+
+AddRelTag("default", $lineStyle=DashedLine())
+AddRelTag("abstract", $lineStyle=DottedLine(), $lineColor="blue")
+
+Container(client, "Single Page Application", "React", "The client web applications user interact with", "react")
+
+Container_Boundary(auth, "Auth Service"){
+    Component(signin, "Sign In Controller", "Express", "Allows users to sign in into the system")
+    Component(signout, "Sign Out Controller", "Express", "Allows users to sign out from the system")
+    Component(signup, "Sign Up Controller", "Express", "Allows users to sign up into the system")
+    Component(password, "Password Component", "NodeJS class", "Provides functionality related to hashing, and comparing passwords")
+    Component(ucp, "User Created Publisher", "RabbitMQ Client", " To publish UserCreatedEvent")
+}
+ContainerDb(authdb, "Auth Database", "MongoDB", "Database for storing user credentials", "mongodb")
+Container_Ext(account, "Account Service", "NodeJS", "Service for managing user information", "nodejs_small")
+
+Rel(client, signin, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(client, signout, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(client, signup, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(signin, password, "Uses", $tags="default")
+Rel(signup, password, "Uses", $tags="default")
+Rel(signin, authdb, "Reads/writes to", "Mongoose", $tags="default")
+Rel(signup, authdb, "Reads/writes to", "Mongoose", $tags="default")
+Rel(signup, ucp, "Uses")
+Rel(ucp, account, "Send UserCreated event to", "Async/via RabbitMQ", $tags="abstract")
+@enduml
+
+@startuml auth-component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam database<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam queue<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam actor<<component>> {
+    StereotypeFontColor #85BBF0
+    FontColor #85BBF0
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam person<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+skinparam rectangle<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam database<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam queue<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam actor<<external_component>> {
+    StereotypeFontColor #CCCCCC
+    FontColor #CCCCCC
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam person<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sprite $nodejs_small [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000016610000000000000000000000
+0000000000000000000008FFFF9000000000000000000000
+00000000000000000005EFFFFFFE50000000000000000000
+000000000000000003CFFFC33CFFFC300000000000000000
+00000000000000019FFFE600005EFFFA1000000000000000
+000000000000006FFFF9000000008FFFF800000000000000
+0000000000004DFFFB200000000001AFFFD5000000000000
+00000000002BFFFD4000000000000004DFFFB20000000000
+0000000019FFFE60000000000000000006EFFF9100000000
+00000001EFFF810000000000000000000018FFFE10000000
+00000009FFB20000000000000000000000002BFF90000000
+0000000CFC0000000000000000000000000000CFC0000000
+0000000CFB000000089500028CFFFEC7100000BFC0000000
+0000000CFB0000000FF9005FFFFFFFFFE30000BFC0000000
+0000000CFB0000000FF902FFFB8678DFFE0000BFC0000000
+0000000CFB0000000FF907FF6000000AFF5000BFC0000000
+0000000CFB0000000FF909FF30000002FF9000BFC0000000
+0000000CFB0000000FF907FFD6200000341000BFC0000000
+0000000CFB0000000FF901EFFFFFDA85000000BFC0000000
+0000000CFB0000000FF9002CFFFFFFFFF90000BFC0000000
+0000000CFB0000000FF90000258ACFFFFFA000BFC0000000
+0000000CFB0000000FF9023100000027FFF100BFC0000000
+0000000CFB0000000FF90FFA000000009FF200BFC0000000
+0000000CFB0000000FF90EFE10000000CFF100BFC0000000
+0000000CFB0000000FF908FFE732235BFFB000BFC0000000
+0000000CFB0000000FF900BFFFFFFFFFFE2000BFC0000000
+0000000CFB0000000FF90006CFFFFFFE810000BFC0000000
+0000000CFC0000000FF9000000344420000000DFC0000000
+00000008FFD400000FF900000000000000004DFF80000000
+00000000CFFFB2004FF8000000000000002BFFFC00000000
+0000000006EFFFCBFFF400000000000019FFFE6000000000
+000000000019FFFFFFB0000000000006EFFF910000000000
+00000000000018CEC7000000000004DFFFB2000000000000
+0000000000000000000220000002AFFFD400000000000000
+000000000000000002BFF800008FFFF70000000000000000
+0000000000000000008FFFE66EFFF9100000000000000000
+00000000000000000002BFFFFFFC30000000000000000000
+0000000000000000000005EFFE5000000000000000000000
+000000000000000000000004400000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<DEV NODEJS_SMALL>> White
+sprite $react [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000686300000000003686000000000000000
+00000000000002EFFFFC30000003CFFFFD10000000000000
+0000000000000CF7249FF800009FF9427FB0000000000000
+0000000000002FB00001CFB01CFC20000AF1000000000000
+0000000000005F60000008FDDF90000005F4000000000000
+0000000000006F400000008FF800000004F6000000000000
+0000000000006F40000000CFFC00000003F6000000000000
+0000000000005F5000000AF99FB0000005F5000000000000
+0000000000003F7000007FB00BF7000007F3000000000000
+0000000000000FA00246FFA99AFF73100AF1000000000000
+0000000000000EFCFFFFFFFFFFFFFFFECEE0000000000000
+00000000004BFFFFC9DF82211228FD9BEFFE920000000000
+000000004CFFC9F802FD00000000DF307F9CFFB300000000
+00000008FF9200ED0BF3001441003FC0DE0029FF70000000
+0000009FC200009F8FA004EFFE400AF8F900002CF8000000
+000003FC0000002FFF201EFFFFE102FFF2000001CF200000
+000008F40000000BF9004FFFFFF4009FB00000004F700000
+000008F40000000CF9004FFFFFF4009FC00000004F800000
+000003FC0000003FFF200EFFFFE002FFF2000000CF300000
+0000008FD300009F8FA004EFFE400AF7F900002CF9000000
+00000007FFA300EE0BF4000440004FB0DE002AFF80000000
+000000003BFFDAF802FD00000000DF207FACFFC400000000
+000000000029EFFFC9DF83222238FDACFFFFB40000000000
+0000000000000EEBEFFFFFFFFFFFFFFFCEE0000000000000
+0000000000001FA00036FF9889FF63100AF0000000000000
+0000000000004F7000006FB00BF6000007F3000000000000
+0000000000005F5000000AF99FA0000005F5000000000000
+0000000000006F40000000CFFC00000004F6000000000000
+0000000000006F400000008FF800000004F6000000000000
+0000000000004F60000009FDDF90000006F4000000000000
+0000000000001FB00002CFB01BFC20000BF2000000000000
+0000000000000BF724AFF800008FF9427FC0000000000000
+00000000000001DFFFFB30000003CFFFFE20000000000000
+000000000000000465200000000003686000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<DEV REACT>> White
+sprite $mongodb [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000001000000000000000000000000
+000000000000000000000006400000000000000000000000
+00000000000000000000002EC00000000000000000000000
+0000000000000000000002DFF60000000000000000000000
+000000000000000000002EFFFF4000000000000000000000
+00000000000000000001EFFFFFF300000000000000000000
+0000000000000000000BFFFFFFFE20000000000000000000
+0000000000000000006FFFFFFFFFD0000000000000000000
+000000000000000001EFFFFFFFFFF8000000000000000000
+00000000000000000AFFFFFFFFFFFF300000000000000000
+00000000000000002FFFFFFFFFFFFFC00000000000000000
+0000000000000000BFFFFFFFFFFFFFF50000000000000000
+0000000000000002FFFFFFFFFFFFFFFD0000000000000000
+0000000000000008FFFFFFFFFFFFFFFF3000000000000000
+000000000000000EFFFFFFFFFFFFFFFFA000000000000000
+000000000000003FFFFFFFFFFFFFFFFFF000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF400000000000000
+00000000000000BFFFFFFFFFFFFFFFFFF900000000000000
+00000000000000DFFFFFFFFFFFFFFFFFFD00000000000000
+00000000000000FFFFFFFFFFFFFFFFFFFF00000000000000
+00000000000001FFFFFFFFFFFFFFFFFFFF20000000000000
+00000000000002FFFFFFFFFFFFFFFFFFFF30000000000000
+00000000000002FFFFFFFFFFFFFFFFFFFF30000000000000
+00000000000003FFFFFFFFFFFFFFFFFFFF30000000000000
+00000000000002FFFFFFFFFFFFFFFFFFFF20000000000000
+00000000000001FFFFFFFFFFFFFFFFFFFF00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000BFFFFFFFFFFFFFFFFFFB00000000000000
+000000000000006FFFFFFFFFFFFFFFFFF700000000000000
+000000000000001FFFFFFFFFFFFFFFFFF300000000000000
+000000000000000BFFFFFFFFFFFFFFFFE000000000000000
+0000000000000004FFFFFFFFFFFFFFFF7000000000000000
+0000000000000000BFFFFFFFFFFFFFFF1000000000000000
+00000000000000003FFFFFFFFFFFFFF90000000000000000
+000000000000000009FFFFFFFFFFFFE10000000000000000
+000000000000000000DFFFFFFFFFFF500000000000000000
+0000000000000000002FFFFFFFFFF9000000000000000000
+00000000000000000004FFFFFFFFB0000000000000000000
+000000000000000000004FFFFFFB00000000000000000000
+0000000000000000000004FFFFA000000000000000000000
+00000000000000000000003EF90000000000000000000000
+000000000000000000000009F20000000000000000000000
+000000000000000000000006F00000000000000000000000
+000000000000000000000004F00000000000000000000000
+000000000000000000000003F00000000000000000000000
+000000000000000000000002F00000000000000000000000
+000000000000000000000000100000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<DEV MONGODB>> White
+
+skinparam arrow<<default>> {
+    Color ;line.dashed
+}
+
+skinparam arrow<<abstract>> {
+    Color blue;line.dotted
+}
+
+
+rectangle "<$react>\n==Single Page Application\n//<size:12>[React]</size>//\n\n The client web applications user interact with" <<container>> as client 
+
+rectangle "==Auth Service\n<size:12>[Container]</size>" <<boundary>> as auth {
+    rectangle "==Sign In Controller\n//<size:12>[Express]</size>//\n\n Allows users to sign in into the system" <<component>> as signin 
+    rectangle "==Sign Out Controller\n//<size:12>[Express]</size>//\n\n Allows users to sign out from the system" <<component>> as signout 
+    rectangle "==Sign Up Controller\n//<size:12>[Express]</size>//\n\n Allows users to sign up into the system" <<component>> as signup 
+    rectangle "==Password Component\n//<size:12>[NodeJS class]</size>//\n\n Provides functionality related to hashing, and comparing passwords" <<component>> as password 
+    rectangle "==User Created Publisher\n//<size:12>[RabbitMQ Client]</size>//\n\n  To publish UserCreatedEvent" <<component>> as ucp 
+}
+database "<$mongodb>\n==Auth Database\n//<size:12>[MongoDB]</size>//\n\n Database for storing user credentials" <<container>> as authdb 
+rectangle "<$nodejs_small>\n==Account Service\n//<size:12>[NodeJS]</size>//\n\n Service for managing user information" <<external_container>> as account 
+
+client - ->> signin <<default>> : **Make API calls to**\n//<size:12>[JSON/HTTPS]</size>//
+client - ->> signout <<default>> : **Make API calls to**\n//<size:12>[JSON/HTTPS]</size>//
+client - ->> signup <<default>> : **Make API calls to**\n//<size:12>[JSON/HTTPS]</size>//
+signin - ->> password <<default>> : **Uses**
+signup - ->> password <<default>> : **Uses**
+signin - ->> authdb <<default>> : **Reads/writes to**\n//<size:12>[Mongoose]</size>//
+signup - ->> authdb <<default>> : **Reads/writes to**\n//<size:12>[Mongoose]</size>//
+signup - ->> ucp : **Uses**
+ucp - ->> account <<abstract>> : **Send UserCreated event to**\n//<size:12>[Async/via RabbitMQ]</size>//
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 19:40:07 WIB 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
