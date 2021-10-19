@@ -1,0 +1,19 @@
+@startuml [System Context] Relace
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+AddRelTag("default", $lineStyle = DashedLine())
+
+SHOW_PERSON_OUTLINE()
+
+Person(customer, "Customer", "User that need the item of the provider")
+Person(provider, "Provider", "User that provide item to the customer")
+
+System_Boundary(relace, "Relace"){
+    System_Ext(stripe, "Stripe", "Third party payment system")
+    System(main, "Relace Marketplace System", "Platform for users to trade items")
+}
+
+Rel_D(customer, main, "Purchase item using", $tags="default")
+Rel_U(provider, main, "Offer item using", $tags="default")
+Rel_R(main, stripe, "Handle payment using", $tags="default")
+@enduml

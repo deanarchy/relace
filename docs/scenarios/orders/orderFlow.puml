@@ -1,0 +1,30 @@
+@startuml [Activity] Order Flow
+
+|Customer|
+start
+:Issue Order;
+
+|Provider|
+if (Confirm Order) then (Order Accepted)
+    :Awaiting Payment;
+else (Order Rejected)
+    :Order Cancelled;
+    stop
+endif
+
+|Customer|
+:Pay the Order;
+
+|Provider|
+repeat :Process Order;
+:Issue Completion;
+
+|Customer|
+repeat while (Confirm Completion) is (Completion Rejected) not (Completion Accepted)
+:Order Completed;
+
+|Provider|
+:Receive Payment;
+
+stop
+@enduml

@@ -1,0 +1,22 @@
+@startuml [Sequence] Add Item
+
+
+actor User as User
+participant Client as Client
+
+box "Item Domain"
+participant NewItemController
+participant ItemDatabase
+end box
+
+collections Display as Display
+
+User -> Client: Create new item on /items/new
+Client -> NewItemController: POST /api/items + data
+
+NewItemController -> ItemDatabase: Write item data
+NewItemController ---> Display: << Event ItemCreated >>
+NewItemController --> Client: 201 OK Resource Created
+
+
+@enduml

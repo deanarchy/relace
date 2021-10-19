@@ -1,0 +1,84 @@
+@startuml [Containers] Relace
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.3.0
+!define ICONURL2 https://raw.githubusercontent.com/plantuml-stdlib/gilbarbara-plantuml-sprites/v1.0/sprites
+
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/devicons/react.puml
+!includeurl ICONURL/devicons/nodejs_small.puml
+!includeurl ICONURL/devicons/mongodb.puml
+!includeurl ICONURL2/rabbitmq.puml
+
+AddRelTag("default", $lineStyle=DashedLine())
+AddRelTag("concrete", $lineColor="red")
+AddRelTag("abstract", $lineStyle=DottedLine(), $lineColor="blue")
+
+SHOW_PERSON_OUTLINE()
+
+Person(customer, "Customer", "User that needs the item of the provider")
+Person(provider, "Provider", "User that provide item to the customer")
+
+System_Ext(stripe, "Stripe", "Third party payment system")
+System_Boundary(main, "Relace Marketplace System"){
+    Container(client, "Single Page Application", "React", "The client web applications user interact with", "react")
+    
+    ContainerQueue(bus, "Event Bus", "RabbitMQ", "Microservice events bus to exchange message across services", "rabbitmq")
+
+    Container(auth, "Auth Service", "NodeJS", "Service for handling user authentication/authorization", "nodejs_small")
+    ContainerDb(authdb, "Auth Database", "MongoDB", "Database for storing user credentials", "mongodb")
+
+    Container(account, "Account Service", "NodeJS", "Service for managing user information", "nodejs_small")
+    ContainerDb(accountdb, "Account Database", "MongoDB", "Database for storing user data", "mongodb")
+
+    Container(item, "Item Service", "NodeJS", "Service for managing item", "nodejs_small")
+    ContainerDb(itemdb, "Item Database", "MongoDB", "Database for storing item data", "mongodb")
+
+    Container(review, "Review Service", "NodeJS", "Service for managing review for the item", "nodejs_small")
+    ContainerDb(reviewdb, "Review Database", "MongoDB", "Database for storing review data", "mongodb")
+
+    Container(order, "Order Service", "NodeJS", "Service for managing order", "nodejs_small")
+    ContainerDb(orderdb, "Order Database", "MongoDB", "Database for storing order data", "mongodb")
+
+    Container(payment, "Payment Service", "NodeJS", "Service for handling payment", "nodejs_small")
+    ContainerDb(paymentdb, "Payment Database", "MongoDB", "Database for storing payment data", "mongodb")
+    
+    Container(display, "Display Service", "NodeJS", "CQRS service for managing the product display", "nodejs_small")
+    ContainerDb(displaydb, "Display Database", "MongoDB", "View database for storing product display", "mongodb")
+}
+
+Rel(customer, client, "Interact with the system to purchase item using", $tags="default")
+Rel(provider, client, "Interact with the system to offer item using", $tags="default")
+
+Rel(client, auth, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(auth, authdb, "Reads/writes to", "Mongoose", $tags="default")
+BiRel(auth, bus, "Publish only event messages", $tags="concrete")
+
+Rel(client, account, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(account, accountdb, "Reads/writes to", "Mongoose", $tags="default")
+BiRel(account, bus, "Pub/Sub event messages", $tags="concrete")
+
+Rel(client, item, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(item, itemdb, "Reads/writes to", "Mongoose", $tags="default")
+BiRel(item, bus, "Pub/Sub event messages", $tags="concrete")
+
+Rel(client, review, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(review, reviewdb, "Reads/writes to", "Mongoose", $tags="default")
+BiRel(review, bus, "Pub/Sub event messages", $tags="concrete")
+
+Rel(client, order, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(order, orderdb, "Reads/writes to", "Mongoose", $tags="default")
+BiRel(order, bus, "Pub/Sub event messages", $tags="concrete")
+
+Rel(client, payment, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(payment, paymentdb, "Reads/writes to", "Mongoose", $tags="default")
+BiRel(payment, bus, "Pub/Sub event messages", $tags="concrete")
+
+Rel_L(client, display, "Request product list to", "JSON/HTTPS", $tags="default")
+Rel_L(display, displaydb, "Reads/writes to", "Mongoose", $tags="default")
+BiRel(display, bus, "Subscribe only event messages", $tags="concrete")
+
+Rel(payment, stripe, "Handle payment using")
+
+LAYOUT_LEFT_RIGHT()
+LAYOUT_AS_SKETCH()
+@enduml

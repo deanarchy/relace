@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: review-mongo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: review-mongo
+  template:
+    metadata:
+      labels:
+        app: review-mongo
+    spec:
+      containers:
+        - name: review-mongo
+          image: mongo
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: review-mongo-service
+spec:
+  selector:
+    app: review-mongo
+  ports:
+    - name: review-mongo
+      protocol: TCP
+      port: 27017
+      targetPort: 27017

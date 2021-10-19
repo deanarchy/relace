@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: order
+  template:
+    metadata:
+      labels:
+        app: order
+    spec:
+      containers:
+        - name: order
+          image: deanarchy/order
+          resources:
+            limits:
+              memory: "512Mi"
+          env:
+            - name: DB_URI
+              value: "mongodb://order-mongo-service:27017/order"
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_KEY
+            - name: AMQP_URL
+              value: "amqp://rabbitmq-service"
+      initContainers:
+        - name: init-rabbitmq
+          image: busybox
+          command:
+            [
+              "sh",
+              "-c",
+              "until nc -vzw 2 rabbitmq-service 15672; do echo waiting rabbitmq service to woke; sleep 2; done",
+            ]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-service
+spec:
+  selector:
+    app: order
+  ports:
+    - name: order
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

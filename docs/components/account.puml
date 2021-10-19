@@ -1,0 +1,28 @@
+@startuml [Component Account] Relace
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.3.0
+!define ICONURL2 https://raw.githubusercontent.com/plantuml-stdlib/gilbarbara-plantuml-sprites/v1.0/sprites
+
+!includeurl ICONURL/devicons/nodejs_small.puml
+!includeurl ICONURL/devicons/react.puml
+!includeurl ICONURL/devicons/mongodb.puml
+
+AddRelTag("default", $lineStyle=DashedLine())
+AddRelTag("abstract", $lineStyle=DottedLine(), $lineColor="blue")
+
+Container(client, "Single Page Application", "React", "The client web applications user interact with", "react")
+
+Container_Boundary(Account, "Account Service"){
+    Component(update, "Update Controller", "Express", "Allows users to update its data")
+    Component(ucl, "User Created Listener", "RabbitMQ Client", "To listen to UserCreatedEvent")
+}
+ContainerDb(accountdb, "Account Database", "MongoDB", "Database for storing user data", "mongodb")
+Container_Ext(auth, "Auth Service", "NodeJS", "Service for managing user information", "nodejs_small")
+
+Rel(client, update, "Make API calls to", "JSON/HTTPS", $tags="default")
+
+Rel(ucl, auth, "Listen UserCreated event from", "Async/via RabbitMQ", $tags="abstract")
+Rel(ucl, accountdb, "Reads/writes to", "Mongoose", $tags="default")
+Rel(update, accountdb, "Reads/writes to", "Mongoose", $tags="default")
+
+@enduml

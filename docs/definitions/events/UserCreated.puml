@@ -1,0 +1,8 @@
+@startjson UserCreatedEvent
+{
+    "data" : {
+        "id": "string",
+        "email": "string"
+    }
+}
+@endjson

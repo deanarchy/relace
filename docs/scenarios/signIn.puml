@@ -1,0 +1,25 @@
+@startuml [Sequence] Sign In
+
+
+actor User as User
+
+User -> Client: Submit user credentials on /login
+Client -> SignInController: POST /api/auth/signin + Credentials
+SignInController -> AuthDatabase: Verify credentials
+
+alt success
+
+    AuthDatabase --> SignInController: Credentials OK
+    SignInController --> Client: 200 OK Set-Cookie=auth-token
+else failure
+
+    AuthDatabase --> SignInController: Credentials error
+    SignInController --> Client: ERROR 400 Invalid Credentials
+end
+
+box "Auth Domain"
+participant SignInController
+participant AuthDatabase
+end box
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml [Sequence] Add Review
+
+
+actor User as User
+participant Client as Client
+
+box "Review Domain"
+participant NewReviewController
+participant ReviewDatabase
+end box
+
+collections Display as Display
+
+User -> Client: Create new review on item's page
+Client -> NewReviewController: POST /api/items/{item.id}/comments + data
+
+NewReviewController -> ReviewDatabase: Write review data
+NewReviewController ---> Display: << Event ReviewCreated >>
+NewReviewController --> Client: 201 OK Resource Created
+
+
+@enduml

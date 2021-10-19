@@ -1,0 +1,19 @@
+@startuml [Sequence] Issue Order
+
+actor "User (Provider)" as User
+participant Client as Client
+
+box "Order Domain"
+participant NewCompletionController
+participant OrderDatabase
+end box
+
+collections Account as Account
+
+User -> Client: Issue a completion for the order
+Client -> NewCompletionController: POST /api/orders/{order.id}/complete
+NewCompletionController -> OrderDatabase: Write order data (status: PendingCompletion)
+NewCompletionController ---> Account: << Event CompletionIssued >>
+NewCompletionController --> Client: 200 OK Resource Updated
+
+@enduml

@@ -1,0 +1,34 @@
+@startuml [Component Auth] Relace
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.3.0
+!define ICONURL2 https://raw.githubusercontent.com/plantuml-stdlib/gilbarbara-plantuml-sprites/v1.0/sprites
+
+!includeurl ICONURL/devicons/nodejs_small.puml
+!includeurl ICONURL/devicons/react.puml
+!includeurl ICONURL/devicons/mongodb.puml
+
+AddRelTag("default", $lineStyle=DashedLine())
+AddRelTag("abstract", $lineStyle=DottedLine(), $lineColor="blue")
+
+Container(client, "Single Page Application", "React", "The client web applications user interact with", "react")
+
+Container_Boundary(auth, "Auth Service"){
+    Component(signin, "Sign In Controller", "Express", "Allows users to sign in into the system")
+    Component(signout, "Sign Out Controller", "Express", "Allows users to sign out from the system")
+    Component(signup, "Sign Up Controller", "Express", "Allows users to sign up into the system")
+    Component(password, "Password Component", "NodeJS class", "Provides functionality related to hashing, and comparing passwords")
+    Component(ucp, "User Created Publisher", "RabbitMQ Client", " To publish UserCreatedEvent")
+}
+ContainerDb(authdb, "Auth Database", "MongoDB", "Database for storing user credentials", "mongodb")
+Container_Ext(account, "Account Service", "NodeJS", "Service for managing user information", "nodejs_small")
+
+Rel(client, signin, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(client, signout, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(client, signup, "Make API calls to", "JSON/HTTPS", $tags="default")
+Rel(signin, password, "Uses", $tags="default")
+Rel(signup, password, "Uses", $tags="default")
+Rel(signin, authdb, "Reads/writes to", "Mongoose", $tags="default")
+Rel(signup, authdb, "Reads/writes to", "Mongoose", $tags="default")
+Rel(signup, ucp, "Uses")
+Rel(ucp, account, "Send UserCreated event to", "Async/via RabbitMQ", $tags="abstract")
+@enduml

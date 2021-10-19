@@ -1,0 +1,32 @@
+@startuml [Sequence] Confirm Order
+
+
+actor "User (Provider)" as User
+participant Client as Client
+
+box "Order Domain"
+participant OrderConfirmationController
+participant OrderDatabase
+end box
+
+collections Account as Account
+collections Payment as Payment
+
+alt accept order
+    User -> Client: Accept the order
+    Client -> OrderConfirmationController: PUT /api/orders/{order.id}/request
+    OrderConfirmationController -> OrderDatabase: Write order data (status: AwaitingPayment)
+    OrderConfirmationController ---> Account: << Event OrderAccepted >>
+    OrderConfirmationController ---> Payment: << Event OrderAccepted >>
+    OrderConfirmationController --> Client: 200 OK Resource Updated
+
+else reject order
+    User -> Client: Reject the order
+    Client -> OrderConfirmationController: DELETE /api/orders/{order.id}/request
+    OrderConfirmationController -> OrderDatabase: Write order data (status: Cancelled)
+    OrderConfirmationController ---> Account: << Event OrderCancelled >>
+    OrderConfirmationController --> Client: 200 OK Resource Updated
+
+end
+
+@enduml

@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: review-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: review
+  template:
+    metadata:
+      labels:
+        app: review
+    spec:
+      containers:
+        - name: review
+          image: deanarchy/review
+          resources:
+            limits:
+              memory: "512Mi"
+          env:
+            - name: DB_URI
+              value: "mongodb://review-mongo-service:27017/review"
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_KEY
+            - name: STRIPE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: stripe-key
+                  key: STRIPE_KEY
+            - name: AMQP_URL
+              value: "amqp://rabbitmq-service"
+      initContainers:
+        - name: init-rabbitmq
+          image: busybox
+          command:
+            [
+              "sh",
+              "-c",
+              "until nc -vzw 2 rabbitmq-service 15672; do echo waiting rabbitmq service to woke; sleep 2; done",
+            ]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: review-service
+spec:
+  selector:
+    app: review
+  ports:
+    - name: review
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

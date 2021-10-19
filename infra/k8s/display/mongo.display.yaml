@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: display-mongo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: display-mongo
+  template:
+    metadata:
+      labels:
+        app: display-mongo
+    spec:
+      containers:
+        - name: display-mongo
+          image: mongo
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: display-mongo-service
+spec:
+  selector:
+    app: display-mongo
+  ports:
+    - name: display-mongo
+      protocol: TCP
+      port: 27017
+      targetPort: 27017

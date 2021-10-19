@@ -1,0 +1,32 @@
+@startuml [Sequence] Sign Up
+
+
+actor User as User
+participant Client as Client
+
+box "Auth Domain"
+participant SignUpController
+participant AuthDatabase
+end box
+
+collections Account as Account
+
+
+User -> Client: Submit user credentials on /register 
+Client -> SignUpController: POST /api/auth/signup + Credentials
+SignUpController -> AuthDatabase: Check existing email
+
+alt success
+    AuthDatabase --> SignUpController: OK email available
+    SignUpController -> AuthDatabase: Write user credentials data
+    SignUpController ---> Account: << Event UserCreated >>
+    SignUpController --> Client: 201 OK Resource Created
+    
+else failure: email exists
+    AuthDatabase --> SignUpController: ERROR email already exists
+    SignUpController --> Client: Error 400 Invalid Credentials
+end
+
+
+
+@enduml

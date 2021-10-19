@@ -1,0 +1,21 @@
+@startuml [Sequence] Issue Order
+
+
+actor "User (Customer)" as User
+participant Client as Client
+
+box "Order Domain"
+participant NewOrderController
+participant OrderDatabase
+end box
+
+collections Account as Account
+
+User -> Client: Place order for an item
+Client -> NewOrderController: POST /api/orders + item.id
+NewOrderController -> OrderDatabase: Write order data (status: Pending)
+NewOrderController ---> Account: << Event OrderIssued >>
+NewOrderController --> Client: 201 OK Resource Created
+
+
+@enduml

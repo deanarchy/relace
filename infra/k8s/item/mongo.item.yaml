@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: item-mongo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: item-mongo
+  template:
+    metadata:
+      labels:
+        app: item-mongo
+    spec:
+      containers:
+        - name: item-mongo
+          image: mongo
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: item-mongo-service
+spec:
+  selector:
+    app: item-mongo
+  ports:
+    - name: item-mongo
+      protocol: TCP
+      port: 27017
+      targetPort: 27017

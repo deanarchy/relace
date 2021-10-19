@@ -1,0 +1,14 @@
+@startuml [Sequence] Sign Out
+
+
+actor User as User
+
+User -> Client: Request from /logout
+Client -> SignOutController: POST /api/auth/signout
+SignOutController --> Client: 200 OK Clear out existing cookies
+
+box "Auth Domain"
+participant SignOutController
+end box
+
+@enduml

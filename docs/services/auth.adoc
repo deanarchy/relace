@@ -1,0 +1,37 @@
+[cols="8*"]
+|===
+3+a| Name: 5+a| Auth Service
+
+3+a| *Description:*
+5+a|
+
+The Auth Service provides an API for handling user authentication / authorization.
+
+8+a| *Capabilities*
+8+a|
+Authentication / Authorization Handling
+8+| *Service API*
+5+| Endpoints 3+| Events Published
+5+a|
+
+* POST /api/auth/signin -> signInController
+* POST /api/auth/signup -> signUpController
+* POST /api/auth/signout -> signOutController
+
+3+a|
+
+* link:../definitions/events/UserCreated.puml[UserCreated]
+
+8+| *Dependencies*
+4+| Invokes 4+| Subscribes to
+4+a|
+N/A
+
+4+a| 
+N/A
+
+8+| *Models*
+8+a|
+* link:../definitions/models/User.puml[User]
+
+|===
