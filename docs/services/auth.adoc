@@ -11,16 +11,10 @@ The Auth Service provides an API for handling user authentication / authorizatio
 8+a|
 Authentication / Authorization Handling
 8+| *Service API*
-5+| Endpoints 3+| Events Published
-5+a|
+8+| Events Published
 
-* POST /api/auth/signin -> signInController
-* POST /api/auth/signup -> signUpController
-* POST /api/auth/signout -> signOutController
-
-3+a|
-
-* link:../definitions/events/UserCreated.puml[UserCreated]
+- UserCreated
+- 
 
 8+| *Dependencies*
 4+| Invokes 4+| Subscribes to
@@ -29,9 +23,5 @@ N/A
 
 4+a| 
 N/A
-
-8+| *Models*
-8+a|
-* link:../definitions/models/User.puml[User]
 
 |===

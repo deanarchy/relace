@@ -70,7 +70,7 @@
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
-    <li><a href="#background">Background</a></li>
+    <li><a href="#note">Note</a></li>
   </ol>
 </details>
 
@@ -142,10 +142,9 @@ Project Link: [https://github.com/deanarchy/relace](https://github.com/deanarchy
 * [microservices.io](https://microservices.io/) as a patterns reference.
 * [Stephen Grider's course](https://www.udemy.com/course/microservices-with-node-js-and-react/) as my entry to microservices.
 
-<!-- Background -->
-## Background
-
-
+<!-- Note -->
+## Note
+This project is a concrete implementation of my studies into software architecture (and software development in general) while attempting to solve real-world challenges. I acknowledges that many aspects of this project are far from perfect and might be improved further. Futhermore, each service (+ database instance for each service + rabbitmq) in the microservice is deployed independently of the others by definition. While this allows for scalability, agility, resilience, and other benefits, it requires a huge amount of resources to run the entire system. My development environment (minikube w/ gaming PC) aren't able to run the project fully thus only able to test it using unit tests (per service) and integrated tests (per significant features). And, due to budget constraints 😆, the project will not be able to be launched into a cloud cluster anytime soon.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
